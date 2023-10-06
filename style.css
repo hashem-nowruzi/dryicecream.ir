@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/vazir.eot"), url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.woff") format("woff"),
+    url("../fonts/vazir.woff2") format("woff2");
+}
+
+body {
+  font-family: "Vazir";
+  font-size: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header {
+  height: 100vh;
+  background-image: url("images/star-background-vertical.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: url("images/star-background-horizontal.jpg");
+  }
+}
+
+#header-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  height: 100%;
+}
+
+#header-box .header-text {
+  font-size: clamp(1rem, calc(1rem + 1.5vw), 3rem);
+}
+
+#header-box .header-image img {
+  max-width: 400px;
+  width: 100%;
+}
