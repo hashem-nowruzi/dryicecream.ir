@@ -16,6 +16,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -51,6 +55,35 @@ header {
 }
 
 #header-box .header-image img {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+footer .footer-image img {
+  width: 300px;
+}
+
+#whatsapp-icon {
+  margin: 20px auto;
+
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
